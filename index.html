@@ -1,139 +1,228 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <title>Antony Raj - CTO Portfolio</title>
-    <link rel="stylesheet" href="assets/css/main.css">
-    <style>
-        /* Techno-themed custom styles */
-        body {
-            background: #0d1117;
-            color: #c9d1d9;
-            font-family: 'Arial', sans-serif;
-        }
-        a {
-            color: #58a6ff;
-            text-decoration: none;
-        }
-        h1, h2, h3 {
-            color: #f78166;
-        }
-        .button {
-            background: #58a6ff;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            text-transform: uppercase;
-        }
-        .button:hover {
-            background: #1f6feb;
-        }
-        .image {
-            border: 2px solid #58a6ff;
-            border-radius: 5px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Antony Raj | CTO, 3D Digital Twin Innovator, AI & Algorithm Enthusiast">
+  <meta property="og:title" content="Antony Raj - CTO Portfolio">
+  <meta property="og:description" content="Explore my portfolio showcasing expertise in 3D Digital Twins, algorithm development, and AI-driven solutions.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourdomain.com">
+  <meta property="og:image" content="images/profile.jpg">
+  <title>Antony Raj - CTO Portfolio</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <style>
+    /* Base Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #0d1117;
+      color: #c9d1d9;
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+    }
+    a {
+      color: #58a6ff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #1f6feb;
+    }
+    header, section, footer {
+      padding: 60px 20px;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 0 20px;
+    }
+    h1, h2, h3 {
+      color: #f78166;
+      margin-bottom: 20px;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+    /* Header Styles */
+    header {
+      background: #161b22;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .header-title {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    .header-subtitle {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+    .btn {
+      display: inline-block;
+      background: #58a6ff;
+      color: #fff;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      text-transform: uppercase;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background: #1f6feb;
+    }
+    /* Grid Layouts */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      align-items: start;
+    }
+    /* Image Styling */
+    .img-fit {
+      width: 100%;
+      height: auto;
+      border: 2px solid #58a6ff;
+      border-radius: 5px;
+    }
+    /* Navigation */
+    nav {
+      background: #0d1117;
+      padding: 10px 20px;
+    }
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+    .nav-links a {
+      font-weight: bold;
+    }
+    /* Footer */
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      background: #161b22;
+    }
+    /* Responsive Utility */
+    @media (max-width: 768px) {
+      header {
+        padding: 80px 20px;
+      }
+      .header-title {
+        font-size: 2.5rem;
+      }
+      .header-subtitle {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
 </head>
 <body>
+  <!-- Navigation -->
+  <nav aria-label="Main Navigation">
+    <div class="container">
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Header -->
-    <header id="header">
-        <div class="container">
-            <h1>Antony Raj</h1>
-            <p>Chief Technology Officer | 3D Digital Twin Innovator | AI & Algorithm Enthusiast</p>
-            <a href="#about" class="button">Discover My Work</a>
+  <!-- Header -->
+  <header role="banner">
+    <div class="container">
+      <h1 class="header-title">Antony Raj</h1>
+      <p class="header-subtitle">Chief Technology Officer | 3D Digital Twin Innovator | AI &amp; Algorithm Enthusiast</p>
+      <a href="#about" class="btn">Discover My Work</a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" aria-labelledby="about-heading">
+    <div class="container">
+      <h2 id="about-heading">About Me</h2>
+      <p>
+        With over 7 years of experience in cutting-edge medical and computer vision technologies, I specialize in 3D digital twins, advanced algorithms, and AI-driven solutions. As the CTO of Dbotics Technology and Solutions, I lead software, algorithm, and AI teams to push the boundaries of innovation.
+      </p>
+      <img src="images/profile.jpg" alt="Portrait of Antony Raj" class="img-fit">
+    </div>
+  </section>
+
+  <!-- Expertise Section -->
+  <section id="expertise" aria-labelledby="expertise-heading">
+    <div class="container">
+      <h2 id="expertise-heading">My Expertise</h2>
+      <p>
+        I develop innovative solutions that span 3D digital twins, algorithm design, and AI applications. My work includes software application design, signal processing, and effective team leadership.
+      </p>
+      <div class="grid">
+        <div>
+          <h3>3D Digital Twins</h3>
+          <p>Creating virtual replicas for various industries using state-of-the-art 3D reconstruction techniques.</p>
         </div>
-    </header>
-
-    <!-- About Section -->
-    <section id="about" class="main">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>
-                With 7+ years of experience in cutting-edge medical and computer vision technologies, 
-                I specialize in 3D digital twins, algorithms, and AI-driven solutions. As CTO of Dbotics Technology 
-                and Solutions, I lead software, algorithm, and AI teams to push the boundaries of innovation.
-            </p>
-            <img src="images/profile.jpg" alt="Antony Raj" class="image fit">
+        <div>
+          <h3>Algorithm Development</h3>
+          <p>Designing AI-driven solutions incorporating Structure from Motion (SFM), 3D Geometric Solvers (3DGS), and machine learning.</p>
         </div>
-    </section>
-
-    <!-- Expertise Section -->
-    <section id="expertise" class="main">
-        <div class="container">
-            <h2>What I Do</h2>
-            <p>
-                I focus on developing innovative solutions, including 3D digital twins, advanced algorithms, 
-                and AI applications. My expertise spans software application design, signal processing, and team leadership.
-            </p>
-            <div class="grid">
-                <div>
-                    <h3>3D Digital Twins</h3>
-                    <p>Creating virtual replicas for industries using cutting-edge 3D reconstruction.</p>
-                </div>
-                <div>
-                    <h3>Algorithm Development</h3>
-                    <p>Designing AI-driven solutions with SFM, 3DGS, and machine learning.</p>
-                </div>
-                <div>
-                    <h3>Team Leadership</h3>
-                    <p>Managing multidisciplinary teams to deliver innovative products.</p>
-                </div>
-                <div>
-                    <h3>Software Applications</h3>
-                    <p>Building robust web apps for interactive visualizations and automation.</p>
-                </div>
-            </div>
+        <div>
+          <h3>Team Leadership</h3>
+          <p>Guiding multidisciplinary teams to deliver innovative products and technological breakthroughs.</p>
         </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="main">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="grid">
-                <div>
-                    <img src="images/project1.jpg" alt="Project 1" class="image fit">
-                    <h3>Digital Twin for Architecture</h3>
-                    <p>A comprehensive 3D modeling solution for urban planning and smart cities.</p>
-                </div>
-                <div>
-                    <img src="images/project2.jpg" alt="Project 2" class="image fit">
-                    <h3>AI in Medical Imaging</h3>
-                    <p>AI-based algorithms for multispectral imaging in medical diagnostics.</p>
-                </div>
-                <div>
-                    <img src="images/project3.jpg" alt="Project 3" class="image fit">
-                    <h3>Smart Wearable Devices</h3>
-                    <p>Developing IoT-enabled devices for enhanced patient care.</p>
-                </div>
-            </div>
+        <div>
+          <h3>Software Applications</h3>
+          <p>Building robust web applications for interactive visualizations and automation.</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="main">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Email: <a href="mailto:antony950704@gmail.com">antony950704@gmail.com</a></p>
-            <p>Phone: <a href="tel:+919942381511">+91 99423 81511</a></p>
-            <div class="social-links">
-                <a href="#" class="icon brands fa-github">GitHub</a>
-                <a href="#" class="icon brands fa-linkedin">LinkedIn</a>
-                <a href="#" class="icon brands fa-twitter">Twitter</a>
-            </div>
-        </div>
-    </section>
+  <!-- Projects Section -->
+  <section id="projects" aria-labelledby="projects-heading">
+    <div class="container">
+      <h2 id="projects-heading">Projects</h2>
+      <div class="grid">
+        <article>
+          <img src="images/project1.jpg" alt="Digital Twin for Architecture project" class="img-fit">
+          <h3>Digital Twin for Architecture</h3>
+          <p>A comprehensive 3D modeling solution for urban planning and smart cities.</p>
+        </article>
+        <article>
+          <img src="images/project2.jpg" alt="AI in Medical Imaging project" class="img-fit">
+          <h3>AI in Medical Imaging</h3>
+          <p>Developing AI-based algorithms for enhanced multispectral imaging in medical diagnostics.</p>
+        </article>
+        <article>
+          <img src="images/project3.jpg" alt="Smart Wearable Devices project" class="img-fit">
+          <h3>Smart Wearable Devices</h3>
+          <p>Innovating IoT-enabled devices to improve patient care and real-time health monitoring.</p>
+        </article>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer id="footer">
-        <div class="container">
-            <p>&copy; 2024 Antony Raj. Designed with ❤️ using HTML5 and CSS.</p>
-        </div>
-    </footer>
+  <!-- Contact Section -->
+  <section id="contact" aria-labelledby="contact-heading">
+    <div class="container">
+      <h2 id="contact-heading">Contact Me</h2>
+      <p>Email: <a href="mailto:antony950704@gmail.com">antony950704@gmail.com</a></p>
+      <p>Phone: <a href="tel:+919942381511">+91 99423 81511</a></p>
+      <div class="social-links" aria-label="Social Media Links">
+        <a href="#" class="icon brands fa-github" aria-label="GitHub">GitHub</a>
+        <a href="#" class="icon brands fa-linkedin" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" class="icon brands fa-twitter" aria-label="Twitter">Twitter</a>
+      </div>
+    </div>
+  </section>
 
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <div class="container">
+      <p>&copy; 2024 Antony Raj. Designed with &hearts; using HTML5 and CSS.</p>
+    </div>
+  </footer>
 </body>
 </html>
-
